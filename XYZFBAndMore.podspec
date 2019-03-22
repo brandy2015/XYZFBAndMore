@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "XYZFBAndMore"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "持续升级"
 
   # This description is used to generate tags and improve search results.
@@ -57,7 +57,7 @@ Pod::Spec.new do |s|
 
   s.authors            = { "Brandy" => "zhangqianbrandy2012@gmail.com" }
   s.platform     = :ios, "10.1"
-  s.source       = { :git => "https://github.com/brandy2015/XYZFBAndMore.git", :tag => "0.0.3"}
+  s.source       = { :git => "https://github.com/brandy2015/XYZFBAndMore.git", :tag => "0.0.4"}
   s.source_files = "XYZFBAndMore/Source/*"
 
 #"XYZFBAndMore/Source/*","XYZFBAndMore/Source/PopupWindow/*","XYZFBAndMore/PopupWindow/Extensions/*","XYZFBAndMore/Source/Custom/*","XYZFBAndMore/Source/Custom/**/*"
@@ -66,8 +66,8 @@ Pod::Spec.new do |s|
 
 
     s.resource_bundles = {
-        'XYZFBAndMore' => ['XYZFBAndMore/Assets/*.{png,xib}'],
-        'XYZFBAndMore' => ['XYZFBAndMore/**/*.xib']
+        'XYZFBAndMore' => ['XYZFBAndMore/Assets/*.png'],
+        'XYZFBAndMore' => ['XYZFBAndMore/Source/*.xib']
     }
 
 #s.resource_bundles = {
@@ -172,7 +172,7 @@ end
 
 #Pod::Spec.new do |s|
 #s.name         = "ZYRunTimeCoT"
-#s.version      = "0.0.3"
+#s.version      = "0.0.4"
 #s.ios.deployment_target = '8.0'
 #s.summary      = "简介"
 #s.homepage     = "https://github.com/zhangyqyx/ZYRunTimeCoT"
