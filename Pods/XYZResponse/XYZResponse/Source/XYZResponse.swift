@@ -9,6 +9,8 @@
 import UIKit
 
 public class XYZResponse: NSObject {
+    
+    
     /// 创建类方法，随时调用
     public static func D点按马达震动反馈(style: FeedbackType) {
         if #available(iOS 10.0, *) {

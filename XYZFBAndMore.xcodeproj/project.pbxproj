@@ -145,46 +145,46 @@
 		D634FE55224524C600765408 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				D634FE63224524C600765408 /* Animator.swift */,
+				D634FE5B224524C600765408 /* BasePopupViewController.swift */,
+				D634FE60224524C600765408 /* CGRect+Inset.swift */,
+				D634FE85224524C600765408 /* ContactUSObjcet.swift */,
+				D634FE79224524C600765408 /* CustomPopupViewController.swift */,
 				D634FE83224524C600765408 /* DemoPopupCell.swift */,
-				D634FE84224524C600765408 /* Nibable.swift */,
-				D634FE7C224524C600765408 /* LoginPopupLoadView.swift */,
-				D634FE80224524C600765408 /* LoginPopupCompletionView.xib */,
-				D634FE77224524C600765408 /* RegisterPopupViewController.swift */,
-				D634FE71224524C600765408 /* DemoToastView.swift */,
-				D634FE6D224524C600765408 /* UIColor+Background.swift */,
-				D634FE6E224524C600765408 /* UIView+Shadow.swift */,
-				D634FE72224524C600765408 /* DemoToastView.xib */,
 				D634FE69224524C600765408 /* DemoPopupView.swift */,
 				D634FE6A224524C600765408 /* DemoPopupView.xib */,
-				D634FE6B224524C600765408 /* PopupViewController.swift */,
-				D634FE7B224524C600765408 /* LoginPopupSNSView.swift */,
+				D634FE71224524C600765408 /* DemoToastView.swift */,
+				D634FE72224524C600765408 /* DemoToastView.xib */,
 				D634FE7D224524C600765408 /* LoginPopupCompletionView.swift */,
+				D634FE80224524C600765408 /* LoginPopupCompletionView.xib */,
+				D634FE7C224524C600765408 /* LoginPopupLoadView.swift */,
 				D634FE7E224524C600765408 /* LoginPopupLoadView.xib */,
+				D634FE7B224524C600765408 /* LoginPopupSNSView.swift */,
 				D634FE7F224524C600765408 /* LoginPopupSNSView.xib */,
 				D634FE81224524C600765408 /* LoginPopupViewController.swift */,
+				D634FEAE224525BD00765408 /* MoreApp.swift */,
+				D634FE84224524C600765408 /* Nibable.swift */,
+				D634FE66224524C600765408 /* PopupContainerView.swift */,
+				D634FE5E224524C600765408 /* PopupContainerWindow.swift */,
+				D634FE65224524C600765408 /* PopupItem.swift */,
+				D634FE59224524C600765408 /* PopupViewContainable.swift */,
+				D634FE6B224524C600765408 /* PopupViewController.swift */,
+				D634FE64224524C600765408 /* PopupViewDirection.swift */,
+				D634FE62224524C600765408 /* PopupWindow.h */,
+				D634FE5D224524C600765408 /* PopupWindowManager.swift */,
 				D634FE74224524C600765408 /* RegisterPopupCompletionView.swift */,
+				D634FE78224524C600765408 /* RegisterPopupCompletionView.xib */,
 				D634FE75224524C600765408 /* RegisterPopupView.swift */,
 				D634FE76224524C600765408 /* RegisterPopupView.xib */,
-				D634FE78224524C600765408 /* RegisterPopupCompletionView.xib */,
-				D634FE79224524C600765408 /* CustomPopupViewController.swift */,
-				D634FE70224524C600765408 /* ToastViewController.swift */,
-				D634FE85224524C600765408 /* ContactUSObjcet.swift */,
-				D634FE86224524C600765408 /* UIFeedBackObject.swift */,
-				D634FE87224524C600765408 /* UIDevice_Extension.swift */,
-				D634FEAE224525BD00765408 /* MoreApp.swift */,
-				D634FE59224524C600765408 /* PopupViewContainable.swift */,
-				D634FE5A224524C600765408 /* ViewType.swift */,
-				D634FE5B224524C600765408 /* BasePopupViewController.swift */,
+				D634FE77224524C600765408 /* RegisterPopupViewController.swift */,
 				D634FE5C224524C600765408 /* ShapeType.swift */,
-				D634FE5D224524C600765408 /* PopupWindowManager.swift */,
-				D634FE5E224524C600765408 /* PopupContainerWindow.swift */,
-				D634FE62224524C600765408 /* PopupWindow.h */,
-				D634FE63224524C600765408 /* Animator.swift */,
-				D634FE64224524C600765408 /* PopupViewDirection.swift */,
-				D634FE65224524C600765408 /* PopupItem.swift */,
-				D634FE60224524C600765408 /* CGRect+Inset.swift */,
+				D634FE70224524C600765408 /* ToastViewController.swift */,
+				D634FE6D224524C600765408 /* UIColor+Background.swift */,
+				D634FE87224524C600765408 /* UIDevice_Extension.swift */,
+				D634FE86224524C600765408 /* UIFeedBackObject.swift */,
+				D634FE6E224524C600765408 /* UIView+Shadow.swift */,
 				D634FE61224524C600765408 /* UIView+Shape.swift */,
-				D634FE66224524C600765408 /* PopupContainerView.swift */,
+				D634FE5A224524C600765408 /* ViewType.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -331,32 +331,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-XYZFBAndMore/Pods-XYZFBAndMore-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AsyncSwift/Async.framework",
-				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
-				"${BUILT_PRODUCTS_DIR}/Localize-Swift/Localize_Swift.framework",
-				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
-				"${BUILT_PRODUCTS_DIR}/SoHow/SoHow.framework",
-				"${BUILT_PRODUCTS_DIR}/XYZColor/XYZColor.framework",
-				"${BUILT_PRODUCTS_DIR}/XYZHUD/XYZHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/XYZResponse/XYZResponse.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-XYZFBAndMore/Pods-XYZFBAndMore-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Async.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Localize_Swift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SoHow.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XYZColor.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XYZHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XYZResponse.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-XYZFBAndMore/Pods-XYZFBAndMore-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -559,7 +538,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhangqian.XYZFBAndMore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -578,7 +557,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhangqian.XYZFBAndMore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

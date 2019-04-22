@@ -108,7 +108,7 @@ public class MoreAppObject: NSObject,MFMailComposeViewControllerDelegate {
                 popup.dismiss(animated: true, completion: nil)
             })
         }
-        
+        print(落格输入法BTN)
         
         popup.addButtons([VTLMakerBTN,XYZManagerBTN])//,落格输入法BTN])
         // Present dialog

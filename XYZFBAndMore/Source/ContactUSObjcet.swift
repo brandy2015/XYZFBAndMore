@@ -137,13 +137,13 @@ public class ContactUSObjcet: NSObject,MFMailComposeViewControllerDelegate {
         nav?.present(popup, animated: animated, completion: nil)
     }
     //email实现
-    public func configuredMailComposeViewController(收件人s:[String] = ["zhangqianbrandy2012@gmail.com"],邮件主题:String = "XYZManager") -> MFMailComposeViewController {
+    public func configuredMailComposeViewController(收件人s:[String] = ["zhangqianbrandy2012@gmail.com"]) -> MFMailComposeViewController {
         let mailComposeVC = MFMailComposeViewController();
         mailComposeVC.mailComposeDelegate = self
         // 设置邮件地址、主题及正文
         mailComposeVC.setToRecipients(收件人s)//收件人
         //邮件主题
-        mailComposeVC.setSubject(邮件主题)
+        mailComposeVC.setSubject(UIDevice.获取版本信息().2)
         mailComposeVC.setMessageBody("\n" + "<具体问题写在下面,您具体遇到了什么问题>".localized() + "\n" + "\n\n\n\n\n\n\n\n\n\n" + "<具体问题写在上面>".localized() + "\n\n " + "系统版本：".localized() + "\(  UIDevice.设备显示().1)" + "\n " + "设备型号：\(  UIDevice.设备显示().2)" + "\n" + " App 的版本号".localized() + "\(  UIDevice.获取版本信息().0)" + "\n" + "App 的 build 版本" + "\(  UIDevice.获取版本信息().1)" + "\n" + " App 的名称".localized() + "\(  UIDevice.获取版本信息().2)", isHTML: false)
         return mailComposeVC
     }
