@@ -11,9 +11,23 @@ import MobileCoreServices            //picker.mediaTypes的类型
 import PhotosUI                      //LivePhoto使用的依赖库
 
 
+
 public class XYZImage: NSObject {
 
 }
+
+
+
+
+//                    self.imageViewX.addShadow()
+//                    QRImageX.SaveToAlbum()
+//                    do{
+//                        try QRImageX.pngData()?.write(to: (userDocument + "1.png"))
+
+
+
+
+
 //public func 处理头像圆角(处理的ImageView:UIImageView,圆角大小:CGFloat = 2)   {
 //    处理的ImageView.layer.masksToBounds = true
 //    处理的ImageView.layer.cornerRadius =  处理的ImageView.bounds.width/圆角大小

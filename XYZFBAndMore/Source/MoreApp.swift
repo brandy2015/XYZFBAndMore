@@ -16,12 +16,13 @@ import PopupDialog                                  //关于我们页面的弹�
 import XYZColor
 import Localize_Swift
 import Async
-import XYZResponse
 import XYZHUD
+import XYZResponse
+
 
 public class MoreAppObject: NSObject,MFMailComposeViewControllerDelegate {
     //    ContactUSObjcet.shared.
-    static public var shared = MoreAppObject(nav: UINavigationController())
+    public static var shared = MoreAppObject(nav: UINavigationController())
     public var nav:UINavigationController?
     public var maildelegate : MFMailComposeViewControllerDelegate?
     public init(nav:UINavigationController?){self.nav = nav}
@@ -60,10 +61,9 @@ public class MoreAppObject: NSObject,MFMailComposeViewControllerDelegate {
     
     
     //----------------     //    配置显示关于我们的界面
-    public  func 打开其他软件(animated: Bool = true) {
-        
+    public func 打开其他软件(animated: Bool = true) {
         XYZResponse.D点按马达震动反馈(style: .success)
-        
+//        impactFeedback(style: .success)
         // Prepare the popup assets
         let title = "更多优质软件".localized()
         let message = "为您推荐我们团队以及友商的优质软件".localized()
@@ -79,19 +79,9 @@ public class MoreAppObject: NSObject,MFMailComposeViewControllerDelegate {
         // Create 微信按钮
         SelfDefineBTN.appearance().tintColor = UIColor.green
         // Add buttons to dialog
-        let  VTLMakerBTN =  SelfDefineBTN(title: "<本团队>VTLMaker--关于Live图片有它就够了".localized(), dismissOnTap: false) {
-            popup.shake()
-            //            impactFeedback(style: .error)
-            XYZResponse.D点按马达震动反馈(style: .error)
-            afterDelay(1.4, closure: {
-                self.打开vtlmaker的AppStore()
-                popup.dismiss(animated: true, completion: nil)
-            })
-        }
-        
         let   XYZManagerBTN =  SelfDefineBTN(title: "<本团队>XYZManager--隐藏秘密的文件管理器".localized(), dismissOnTap: false) {
             popup.shake()
-        
+//            impactFeedback(style: .error)
             XYZResponse.D点按马达震动反馈(style: .error)
             afterDelay(1.4, closure: {
                 self.打开XYZManager的AppStore()//self.打开vtlmaker的AppStore()
@@ -101,16 +91,16 @@ public class MoreAppObject: NSObject,MFMailComposeViewControllerDelegate {
         
         let  落格输入法BTN =  SelfDefineBTN(title: "<来自友商>落格输入法--输入法空前不同".localized(), dismissOnTap: false) {
             popup.shake()
+//            impactFeedback(style: .error)
             XYZResponse.D点按马达震动反馈(style: .error)
-            
             afterDelay(1.4, closure: {
                 self.打开落格输入法X的AppStore()
                 popup.dismiss(animated: true, completion: nil)
             })
         }
-        print(落格输入法BTN)
+       
         
-        popup.addButtons([VTLMakerBTN,XYZManagerBTN])//,落格输入法BTN])
+       popup.addButtons([XYZManagerBTN,落格输入法BTN])
         // Present dialog
         nav?.present(popup, animated: animated, completion: nil)
     }
@@ -133,21 +123,21 @@ public class MoreAppObject: NSObject,MFMailComposeViewControllerDelegate {
 
 
 //打开的按钮
-extension MoreAppObject{
+public extension MoreAppObject{
     
-    public func 打开XYZManager的AppStore()  {
+    func 打开XYZManager的AppStore()  {
         let vtlmakerString = "https://itunes.apple.com/cn/app/id1275597118"
         self.ToAnotherWeb更多软件按钮(with: vtlmakerString, 描述: "正在为您打开本开发者团队更多软件".localized())
         print("XYZManager下载页")
     }
     
     
-    public func 打开vtlmaker的AppStore()  {
+    func 打开vtlmaker的AppStore()  {
         let vtlmakerString = "https://itunes.apple.com/cn/app/vtlmaker/id1245243577?mt=8"
         self.ToAnotherWeb更多软件按钮(with: vtlmakerString, 描述: "正在为您打开本开发者团队更多软件".localized())
         print("VTLMaker下载页")
     }
-    public func 打开落格输入法X的AppStore()  {
+    func 打开落格输入法X的AppStore()  {
         
         let vtlmakerString = "https://itunes.apple.com/cn/app/落格输入法-x/id1373102819?mt=8"
         let urlxx = vtlmakerString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
@@ -159,9 +149,9 @@ extension MoreAppObject{
 
 
 
-extension MoreAppObject{
+public extension MoreAppObject{
     //----------------      //关于我们的页面的属性调整
-    public func 灰色属性()  {
+    func 灰色属性()  {
         
         // Customize dialog appearance
         let pv = PopupDialogDefaultView.appearance()
@@ -202,8 +192,8 @@ extension MoreAppObject{
 }
 
 //弹出框相关
-extension MoreAppObject{
-    public func 显示账号复制成功(标题:String,描述:String,颜色:UIColor,复制进剪贴板:String) {
+public extension MoreAppObject{
+    func 显示账号复制成功(标题:String,描述:String,颜色:UIColor,复制进剪贴板:String) {
         UIPasteboard.general.string = 复制进剪贴板
         XYZHUD.弹出popUPView(标题:标题, 描述:描述 , 颜色: 颜色)
     }
