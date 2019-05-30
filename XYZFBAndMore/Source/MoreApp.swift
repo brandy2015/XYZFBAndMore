@@ -58,12 +58,10 @@ public class MoreAppObject: NSObject,MFMailComposeViewControllerDelegate {
         }
     }
     
-    
-    
     //----------------     //    配置显示关于我们的界面
-    public func 打开其他软件(animated: Bool = true) {
+    public func 打开自有软件(animated: Bool = true) {
         XYZResponse.D点按马达震动反馈(style: .success)
-//        impactFeedback(style: .success)
+        //        impactFeedback(style: .success)
         // Prepare the popup assets
         let title = "更多优质软件".localized()
         let message = "为您推荐我们团队以及友商的优质软件".localized()
@@ -81,7 +79,63 @@ public class MoreAppObject: NSObject,MFMailComposeViewControllerDelegate {
         // Add buttons to dialog
         let   XYZManagerBTN =  SelfDefineBTN(title: "<本团队>XYZManager--隐藏秘密的文件管理器".localized(), dismissOnTap: false) {
             popup.shake()
-//            impactFeedback(style: .error)
+            //            impactFeedback(style: .error)
+            XYZResponse.D点按马达震动反馈(style: .error)
+            afterDelay(1.4, closure: {
+                self.打开XYZManager的AppStore()//self.打开vtlmaker的AppStore()
+                popup.dismiss(animated: true, completion: nil)
+            })
+        }
+        
+        
+        let   VTLMakerBTN =  SelfDefineBTN(title: "<本团队>VTLMaker--动态照片制作大师".localized(), dismissOnTap: false) {
+            popup.shake()
+            //            impactFeedback(style: .error)
+            XYZResponse.D点按马达震动反馈(style: .error)
+            afterDelay(1.4, closure: {
+                self.打开vtlmaker的AppStore()//self.打开vtlmaker的AppStore()
+                popup.dismiss(animated: true, completion: nil)
+            })
+        }
+        
+        let   XYZQRCodeBTN =  SelfDefineBTN(title: "<本团队>XYZQRCode--二维码生成扫描大管家".localized(), dismissOnTap: false) {
+            popup.shake()
+            //            impactFeedback(style: .error)
+            XYZResponse.D点按马达震动反馈(style: .error)
+            afterDelay(1.4, closure: {
+                self.XYZQRCode的AppStore()//self.打开vtlmaker的AppStore()
+                popup.dismiss(animated: true, completion: nil)
+            })
+        }
+        
+        
+        popup.addButtons([XYZManagerBTN,VTLMakerBTN,XYZQRCodeBTN])
+        // Present dialog
+        nav?.present(popup, animated: animated, completion: nil)
+    }
+    
+    //----------------     //    配置显示关于我们的界面
+    public func 打开其他软件(animated: Bool = true) {
+        XYZResponse.D点按马达震动反馈(style: .success)
+        //        impactFeedback(style: .success)
+        // Prepare the popup assets
+        let title = "更多优质软件".localized()
+        let message = "为您推荐我们团队以及友商的优质软件".localized()
+        
+        let image = UIImage(named: "MoreAppNeed")
+        
+        // Create the dialog
+        let popup = PopupDialog(title: title, message: message, image: image, preferredWidth: 580)
+        
+        popup.buttonAlignment = .vertical//Button的排列方式
+        popup.transitionStyle = .zoomIn  //飞入
+        
+        // Create 微信按钮
+        SelfDefineBTN.appearance().tintColor = UIColor.green
+        // Add buttons to dialog
+        let   XYZManagerBTN =  SelfDefineBTN(title: "<本团队>XYZManager--隐藏秘密的文件管理器".localized(), dismissOnTap: false) {
+            popup.shake()
+            //            impactFeedback(style: .error)
             XYZResponse.D点按马达震动反馈(style: .error)
             afterDelay(1.4, closure: {
                 self.打开XYZManager的AppStore()//self.打开vtlmaker的AppStore()
@@ -91,16 +145,16 @@ public class MoreAppObject: NSObject,MFMailComposeViewControllerDelegate {
         
         let  落格输入法BTN =  SelfDefineBTN(title: "<来自友商>落格输入法--输入法空前不同".localized(), dismissOnTap: false) {
             popup.shake()
-//            impactFeedback(style: .error)
+            //            impactFeedback(style: .error)
             XYZResponse.D点按马达震动反馈(style: .error)
             afterDelay(1.4, closure: {
                 self.打开落格输入法X的AppStore()
                 popup.dismiss(animated: true, completion: nil)
             })
         }
-       
         
-       popup.addButtons([XYZManagerBTN,落格输入法BTN])
+        
+        popup.addButtons([XYZManagerBTN,落格输入法BTN])
         // Present dialog
         nav?.present(popup, animated: animated, completion: nil)
     }
@@ -124,6 +178,12 @@ public class MoreAppObject: NSObject,MFMailComposeViewControllerDelegate {
 
 //打开的按钮
 public extension MoreAppObject{
+    func 打开vtlmaker的AppStore()  {
+        let vtlmakerString = "https://itunes.apple.com/cn/app/vtlmaker/id1245243577?mt=8"
+        self.ToAnotherWeb更多软件按钮(with: vtlmakerString, 描述: "正在为您打开本开发者团队更多软件".localized())
+        print("VTLMaker下载页")
+    }
+    
     
     func 打开XYZManager的AppStore()  {
         let vtlmakerString = "https://itunes.apple.com/cn/app/id1275597118"
@@ -132,10 +192,10 @@ public extension MoreAppObject{
     }
     
     
-    func 打开vtlmaker的AppStore()  {
-        let vtlmakerString = "https://itunes.apple.com/cn/app/vtlmaker/id1245243577?mt=8"
-        self.ToAnotherWeb更多软件按钮(with: vtlmakerString, 描述: "正在为您打开本开发者团队更多软件".localized())
-        print("VTLMaker下载页")
+    func XYZQRCode的AppStore()  {
+        let XYZQRCodeString = "https://itunes.apple.com/cn/app/id1455193186"
+        self.ToAnotherWeb更多软件按钮(with: XYZQRCodeString, 描述: "正在为您打开本开发者团队更多软件".localized())
+        print("XYZQRCode下载页")
     }
     func 打开落格输入法X的AppStore()  {
         
