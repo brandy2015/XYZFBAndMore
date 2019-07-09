@@ -137,8 +137,10 @@ public class ContactUSObjcet: NSObject,MFMailComposeViewControllerDelegate {
         // Present dialog
         nav?.present(popup, animated: animated, completion: nil)
     }
+    
+    
     //email实现
-    public func configuredMailComposeViewController(收件人s:[String] = ["zhangqianbrandy2012@gmail.com"],邮件主题:String = "VTLMaker反馈".localized()) -> MFMailComposeViewController {
+    public func configuredMailComposeViewController(收件人s:[String] = ["XYZTechFeedBack@gmail.com"],邮件主题:String = "VTLMaker反馈".localized()) -> MFMailComposeViewController {
         let mailComposeVC = MFMailComposeViewController();
         mailComposeVC.mailComposeDelegate = self
         // 设置邮件地址、主题及正文
@@ -153,7 +155,7 @@ public class ContactUSObjcet: NSObject,MFMailComposeViewControllerDelegate {
         afterDelay(1) {self.显示email显示框()}
     }
     public func showSendMailErrorAlert() {
-        UIPasteboard.general.string = "zhangqianbrandy2012@gmail.com";
+        UIPasteboard.general.string = "XYZTechFeedBack@gmail.com";
         XYZHUD.弹出popUPView(标题: "无法发送邮件".localized(), 描述: "未设置邮箱，设置后再尝试发送;或者用您的邮箱App发送，Email已经复制到剪贴板".localized(), 颜色: UIColor.Failed)
     }
     

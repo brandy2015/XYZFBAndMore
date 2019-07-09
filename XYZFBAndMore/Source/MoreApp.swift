@@ -108,8 +108,17 @@ public class MoreAppObject: NSObject,MFMailComposeViewControllerDelegate {
             })
         }
         
+        let  落格输入法BTN =  SelfDefineBTN(title: "<来自友商>落格输入法--输入法空前不同".localized(), dismissOnTap: false) {
+            popup.shake()
+            //            impactFeedback(style: .error)
+            XYZResponse.D点按马达震动反馈(style: .error)
+            afterDelay(1.4, closure: {
+                self.打开落格输入法X的AppStore()
+                popup.dismiss(animated: true, completion: nil)
+            })
+        }
         
-        popup.addButtons([XYZManagerBTN,VTLMakerBTN,XYZQRCodeBTN])
+        popup.addButtons([XYZManagerBTN,VTLMakerBTN,XYZQRCodeBTN,落格输入法BTN])
         // Present dialog
         nav?.present(popup, animated: animated, completion: nil)
     }
