@@ -214,6 +214,13 @@ public extension MoreAppObject{
         self.ToAnotherWeb更多软件按钮(with: urlxx, 描述: "正在为您打开友商优质软件".localized())
         print("打开落格输入法")
     }
+    
+    
+    func 在AppStore评论(id:String)  {
+        let 我的App地址 = "itms-apps://itunes.apple.com/cn/app/id\(id)?mt=8&action=write-review"
+        XYZJump.To.在AppStore评论(AppURLString: 我的App地址)
+    }
+    
 }
 
 
