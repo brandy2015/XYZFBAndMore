@@ -36,7 +36,7 @@ public extension MoreAppObject{
         // Add buttons to dialog
         
         let TitleArray = [
-            "VTLmaker":"<本团队>VTLMaker--动态照片制作大师".localized(),
+            "VTLMaker":"<本团队>VTLMaker--动态照片制作大师".localized(),
             "XYZManager":"<本团队>XYZManager--隐藏秘密的文件管理器".localized(),
             "XYZQRCode":"<本团队>XYZQRCode--二维码生成扫描大管家".localized(),
         ]
