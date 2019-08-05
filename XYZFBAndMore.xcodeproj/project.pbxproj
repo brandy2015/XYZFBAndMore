@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D60000C422F7DC1600E7828A /* MoreDefine_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60000C322F7DC1600E7828A /* MoreDefine_Extension.swift */; };
+		D60000C622F7DEB200E7828A /* SelfHUD_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60000C522F7DEB200E7828A /* SelfHUD_Extension.swift */; };
+		D60000C822F7DFB100E7828A /* XYZEmail_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60000C722F7DFB100E7828A /* XYZEmail_Extension.swift */; };
+		D60000CA22F7E09C00E7828A /* XYZSocialOpen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60000C922F7E09C00E7828A /* XYZSocialOpen.swift */; };
+		D60000CC22F7E20400E7828A /* XYZAppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60000CB22F7E20400E7828A /* XYZAppStore.swift */; };
+		D60000CE22F7EEDB00E7828A /* FeedBackEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60000CD22F7EEDB00E7828A /* FeedBackEnum.swift */; };
 		D63E5F0A2292E77900F56A77 /* ContactUSObjcet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63E5F072292E77900F56A77 /* ContactUSObjcet.swift */; };
 		D63E5F0B2292E77900F56A77 /* MoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63E5F082292E77900F56A77 /* MoreApp.swift */; };
 		D67BC14C22450EE4009CD7CD /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D67BC14922450EE3009CD7CD /* LICENSE */; };
@@ -23,6 +29,12 @@
 /* Begin PBXFileReference section */
 		58FC4FEFEC7E2F51FA2DA5BB /* Pods_XYZFBAndMore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XYZFBAndMore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3123571881C4EB877895512 /* Pods-XYZFBAndMore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYZFBAndMore.release.xcconfig"; path = "Target Support Files/Pods-XYZFBAndMore/Pods-XYZFBAndMore.release.xcconfig"; sourceTree = "<group>"; };
+		D60000C322F7DC1600E7828A /* MoreDefine_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreDefine_Extension.swift; sourceTree = "<group>"; };
+		D60000C522F7DEB200E7828A /* SelfHUD_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfHUD_Extension.swift; sourceTree = "<group>"; };
+		D60000C722F7DFB100E7828A /* XYZEmail_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZEmail_Extension.swift; sourceTree = "<group>"; };
+		D60000C922F7E09C00E7828A /* XYZSocialOpen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZSocialOpen.swift; sourceTree = "<group>"; };
+		D60000CB22F7E20400E7828A /* XYZAppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZAppStore.swift; sourceTree = "<group>"; };
+		D60000CD22F7EEDB00E7828A /* FeedBackEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackEnum.swift; sourceTree = "<group>"; };
 		D63E5F072292E77900F56A77 /* ContactUSObjcet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactUSObjcet.swift; sourceTree = "<group>"; };
 		D63E5F082292E77900F56A77 /* MoreApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreApp.swift; sourceTree = "<group>"; };
 		D67BC14922450EE3009CD7CD /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -72,6 +84,12 @@
 			children = (
 				D63E5F072292E77900F56A77 /* ContactUSObjcet.swift */,
 				D63E5F082292E77900F56A77 /* MoreApp.swift */,
+				D60000C522F7DEB200E7828A /* SelfHUD_Extension.swift */,
+				D60000C722F7DFB100E7828A /* XYZEmail_Extension.swift */,
+				D60000C922F7E09C00E7828A /* XYZSocialOpen.swift */,
+				D60000CB22F7E20400E7828A /* XYZAppStore.swift */,
+				D60000C322F7DC1600E7828A /* MoreDefine_Extension.swift */,
+				D60000CD22F7EEDB00E7828A /* FeedBackEnum.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -230,9 +248,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D63E5F0B2292E77900F56A77 /* MoreApp.swift in Sources */,
+				D60000C422F7DC1600E7828A /* MoreDefine_Extension.swift in Sources */,
+				D60000CC22F7E20400E7828A /* XYZAppStore.swift in Sources */,
 				D63E5F0A2292E77900F56A77 /* ContactUSObjcet.swift in Sources */,
 				D6E22C722244A15B006BC591 /* ViewController.swift in Sources */,
 				D6E22C702244A15B006BC591 /* AppDelegate.swift in Sources */,
+				D60000C622F7DEB200E7828A /* SelfHUD_Extension.swift in Sources */,
+				D60000CE22F7EEDB00E7828A /* FeedBackEnum.swift in Sources */,
+				D60000CA22F7E09C00E7828A /* XYZSocialOpen.swift in Sources */,
+				D60000C822F7DFB100E7828A /* XYZEmail_Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

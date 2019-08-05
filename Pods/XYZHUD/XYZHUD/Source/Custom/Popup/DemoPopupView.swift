@@ -10,21 +10,22 @@ import UIKit
 //import PopupWindow
 
 class DemoPopupView: UIView, PopupViewContainable, Nibable {
-    
-    
-    
-    enum Const {
-        static let height: CGFloat = 100
-    }
 
+    enum Const {static let height: CGFloat = 100}
+    
     @IBOutlet weak var containerView: UIView! {
-        didSet {
-            containerView.layer.masksToBounds = true
-        }
+        didSet {containerView.layer.masksToBounds = true}
     }
+    
+    
+        
     @IBOutlet weak var closeButton: UIButton! {
         didSet {
             closeButton.imageView?.tintColor = .white
+            let bundlePath = Bundle(for: self.classForCoder).bundlePath //+ "/XYZHUDPic.bundle"
+            let bundleXX = Bundle(path: bundlePath)!
+            let closeBTN = UIImage(named: "closeBTN", in: bundleXX, compatibleWith: nil)!
+            closeButton.setImage(closeBTN, for: .normal)
         }
     }
     @IBOutlet weak var titleLabel: UILabel!
