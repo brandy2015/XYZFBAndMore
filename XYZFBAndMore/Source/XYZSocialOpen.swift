@@ -17,16 +17,10 @@ import Localize_Swift
 import XYZHUD
 import XYZResponse
 
-class XYZSocialOpenBUTTON: NSObject {
-
-}
-
 
 //打开的按钮
 public extension ContactUSObjcet{
-    
-    
-    //----------------     //    配置显示关于我们的界面
+    //-------------- 配置显示关于我们的界面
     func 显示关于我们的界面(animated: Bool = true) {
         XYZResponse.D点按马达震动反馈(style: .success)
         // Prepare the popup assets

@@ -13,7 +13,7 @@ import SoHow                                        //自有库
 import PopupDialog                                  //关于我们页面的弹出依赖
 import XYZColor
 import Localize_Swift
-import Async
+//import Async
 import XYZHUD
 import XYZResponse
 
@@ -65,17 +65,17 @@ public extension MoreAppObject{
         return SelfDefineBTN(title: title, dismissOnTap: false) {
             popup.shake()
             XYZResponse.D点按马达震动反馈(style: .error)
-            afterDelay(1.4, closure: {
+            afterDelay(1.4, closure: {DispatchQueue.main.async {
                 self.打开App的AppStore(App: App)
                 popup.dismiss(animated: true, completion: nil)
-            })
+            }})
         }
     }
     
     func 打开AppStore页面(AppSite:String,描述:String = "正在为您打开本开发者团队更多软件".localized() ,颜色:UIColor = UIColor.Succeeded) {
         //        let urlxx = vtlmakerString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
         XYZHUD.弹出popUPView(标题: "请稍等".localized(), 描述: 描述, 颜色: 颜色)
-        Async.userInitiated {}.main {
+        DispatchQueue.main.async {
             guard let Appurl = URL(string: AppSite)  else{return}
             UIApplication.shared.open(Appurl, options: [:], completionHandler: nil)
         }
@@ -102,8 +102,4 @@ public extension MoreAppObject{
         self.打开AppStore页面(AppSite: vtlmakerString, 描述: "正在为您打开友商优质软件".localized(), 颜色: .darkGray)
         print("打开落格输入法")
     }
-    
-    
-    
-    
 }

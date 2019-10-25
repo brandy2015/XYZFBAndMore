@@ -15,9 +15,9 @@ import Localize_Swift                               //本地化库
 public class ContactUSObjcet: NSObject,MFMailComposeViewControllerDelegate{
 
     public static var shared :ContactUSObjcet? = nil
-    public var nav:UINavigationController?
-    public var maildelegate : MFMailComposeViewControllerDelegate?
-    public var mailComposeViewController : MFMailComposeViewController!
+     var nav:UINavigationController?
+     var maildelegate : MFMailComposeViewControllerDelegate?
+     var mailComposeViewController : MFMailComposeViewController!
 
     public init(nav:UINavigationController?){
         self.nav = nav

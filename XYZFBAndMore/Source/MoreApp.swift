@@ -15,7 +15,7 @@ import SoHow                                        //自有库
 import PopupDialog                                  //关于我们页面的弹出依赖
 import XYZColor
 import Localize_Swift
-import Async
+//import Async
 import XYZHUD
 import XYZResponse
 
@@ -23,7 +23,7 @@ import XYZResponse
 
 public class MoreAppObject: NSObject{
     public static var shared :MoreAppObject? = nil
-    public var nav:UINavigationController?
+    var nav:UINavigationController?
     public init(nav:UINavigationController?){
         self.nav = nav
     }

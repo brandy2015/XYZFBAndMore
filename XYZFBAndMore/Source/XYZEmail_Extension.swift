@@ -11,11 +11,6 @@ import XYZHUD
 import SoHow
 import MessageUI
 
-
-class XYZEmail_Extension: NSObject {
-
-}
-
 //Email相关
 
 public extension ContactUSObjcet{

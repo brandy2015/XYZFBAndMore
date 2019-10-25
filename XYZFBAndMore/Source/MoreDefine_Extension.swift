@@ -9,10 +9,6 @@
 import UIKit
 import PopupDialog
 
-class MoreDefine_Extension: NSObject {
-
-}
-
 //按钮属性
 public final class SelfDefineBTN: PopupDialogButton {
     override public func setupView() {
