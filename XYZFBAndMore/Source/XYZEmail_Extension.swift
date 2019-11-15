@@ -30,6 +30,7 @@ public extension ContactUSObjcet{
         let mailComposeVC = MFMailComposeViewController();
         mailComposeVC.mailComposeDelegate = self
         // 设置邮件地址、主题及正文
+        mailComposeVC.title = 邮件主题
         mailComposeVC.setToRecipients(收件人s)//收件人
         //邮件主题
         mailComposeVC.setSubject(("\(UIDevice.appName)" + "反馈"))

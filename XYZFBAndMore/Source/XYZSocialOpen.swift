@@ -21,7 +21,7 @@ import XYZResponse
 //打开的按钮
 public extension ContactUSObjcet{
     //-------------- 配置显示关于我们的界面
-    func 显示关于我们的界面(animated: Bool = true) {
+    func 显示关于我们的界面(animated: Bool = true,只包扩微博和Email:Bool = true) {
         XYZResponse.D点按马达震动反馈(style: .success)
         // Prepare the popup assets
         let title = "联系方式".localized()
@@ -36,12 +36,21 @@ public extension ContactUSObjcet{
         // Create 微信按钮
         SelfDefineBTN.appearance().tintColor = UIColor.green
         
-        let SocialArray = [ "微信"        :"Wechat",
-                            "微信公众号"   :"WeChatPublic",
-                            "QQ"         :"QQ",
-                            "微博"        :"WeiBo",
-                            "Email"      :"Email",
-        ]
+        var SocialArray = [String : String]()
+        if 只包扩微博和Email{
+            SocialArray = [
+                                "微博"        :"WeiBo",
+                                "Email"      :"Email",
+            ]
+        }else{
+            SocialArray = [     "微信"        :"Wechat",
+                                "微信公众号"   :"WeChatPublic",
+                                "QQ"         :"QQ",
+                                "微博"        :"WeiBo",
+                                "Email"      :"Email",
+            ]
+        }
+        
         
         let BTNs = SocialArray.map { i in
             return ConfigureBTN(title: i.0.localized(), popup: popup, BTNForWhat: XYZSocialType(rawValue: i.1)!)
@@ -66,8 +75,7 @@ public extension ContactUSObjcet{
             })
         }
     }
-    func 打开微博按钮() {
-        let urlString = "https://m.weibo.cn/status/4271057118713030?display=0&retcode=6102"
+    func 打开微博按钮(urlString :String = "https://m.weibo.cn/status/4271057118713030?display=0&retcode=6102") {
         if let url = URL(string: urlString) {
             UIApplication.shared.open(url, options: [:],  completionHandler: { (success) in})
         }
