@@ -25,19 +25,22 @@ public class ContactUSObjcet: NSObject,MFMailComposeViewControllerDelegate{
     }
     
     //跳转打开微信、微博、Email
-    public func openURL(URLString : String,打开的是:String,延迟:Double = 4) {
+    public func openURL(URLString : String,打开的是:String,延迟:Double = 1) {
         afterDelay(延迟) {
-            guard let url = URL(string: URLString) , UIApplication.shared.canOpenURL(url) else {
-                switch 打开的是{
-                case "微博":
-                    self.打开失败(描述: "您可能没有安装微博App,正在为您打开网页版微博".localized())
-                    afterDelay(5) { UIApplication.shared.open(URL(string: "https://m.weibo.cn/u/5716230621")!, options: [:], completionHandler: nil)}
-                case "微信":self.打开失败(描述: "您可能没有安装微信App".localized())
-                case "QQ":self.打开失败(描述: "您可能没有安装QQ".localized())
-                default:print("没有东西")}
-                return
+            DispatchQueue.main.async {
+                guard let url = URL(string: URLString) , UIApplication.shared.canOpenURL(url) else {
+                    switch 打开的是{
+                    case "微博":
+                        self.打开失败(描述: "您可能没有安装微博App,正在为您打开网页版微博".localized())
+                        afterDelay(5) { UIApplication.shared.open(URL(string: "https://m.weibo.cn/u/5716230621")!, options: [:], completionHandler: nil)}
+                    case "微信":self.打开失败(描述: "您可能没有安装微信App".localized())
+                    case "QQ":self.打开失败(描述: "您可能没有安装QQ".localized())
+                    default:print("没有东西")}
+                    return
+                }
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
             }
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            
         }
     }
 }

@@ -23,6 +23,7 @@
 		D6E22C752244A15B006BC591 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6E22C732244A15B006BC591 /* Main.storyboard */; };
 		D6E22C772244A15C006BC591 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6E22C762244A15C006BC591 /* Assets.xcassets */; };
 		D6E22C7A2244A15C006BC591 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6E22C782244A15C006BC591 /* LaunchScreen.storyboard */; };
+		D6EACA5D23A0878B0060EB65 /* Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EACA5C23A0878B0060EB65 /* Help.swift */; };
 		F60E0C04217E1DFEDA9F3468 /* Pods_XYZFBAndMore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58FC4FEFEC7E2F51FA2DA5BB /* Pods_XYZFBAndMore.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		D6E22C762244A15C006BC591 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6E22C792244A15C006BC591 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6E22C7B2244A15C006BC591 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6EACA5C23A0878B0060EB65 /* Help.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Help.swift; sourceTree = "<group>"; };
 		F9040EC7EDC39AC166DEABEE /* Pods-XYZFBAndMore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYZFBAndMore.debug.xcconfig"; path = "Target Support Files/Pods-XYZFBAndMore/Pods-XYZFBAndMore.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +92,7 @@
 				D60000CB22F7E20400E7828A /* XYZAppStore.swift */,
 				D60000C322F7DC1600E7828A /* MoreDefine_Extension.swift */,
 				D60000CD22F7EEDB00E7828A /* FeedBackEnum.swift */,
+				D6EACA5C23A0878B0060EB65 /* Help.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				D60000CC22F7E20400E7828A /* XYZAppStore.swift in Sources */,
 				D63E5F0A2292E77900F56A77 /* ContactUSObjcet.swift in Sources */,
 				D6E22C722244A15B006BC591 /* ViewController.swift in Sources */,
+				D6EACA5D23A0878B0060EB65 /* Help.swift in Sources */,
 				D6E22C702244A15B006BC591 /* AppDelegate.swift in Sources */,
 				D60000C622F7DEB200E7828A /* SelfHUD_Extension.swift in Sources */,
 				D60000CE22F7EEDB00E7828A /* FeedBackEnum.swift in Sources */,
@@ -333,7 +337,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -388,7 +392,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -406,7 +410,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E5VG453CHM;
 				INFOPLIST_FILE = XYZFBAndMore/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -426,7 +430,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E5VG453CHM;
 				INFOPLIST_FILE = XYZFBAndMore/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
