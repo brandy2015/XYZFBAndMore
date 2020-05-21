@@ -11,7 +11,7 @@ import UIKit                                        //iOS基础库
 import SoHow                                        //自有库
 //---------------------第三方的库------------------------//
 import PopupDialog                                  //关于我们页面的弹出依赖
-import XYZColor
+ 
 import Localize_Swift
 //import Async
 import XYZHUD

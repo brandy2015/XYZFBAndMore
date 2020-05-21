@@ -1,28 +1,26 @@
 PODS:
-  - DynamicBlurView (4.0.0)
+  - DynamicBlurView (4.1.0)
   - Localize-Swift (3.1.0)
-  - MBProgressHUD (1.1.0)
+  - MBProgressHUD (1.2.0)
   - PopupDialog (1.1.1):
     - DynamicBlurView (~> 4.0)
-  - SoHow (2.1.2):
-    - MBProgressHUD
+  - SoHow (2.2.2)
   - XYZColor (1.1.1)
   - XYZHUD (1.1.1):
     - Localize-Swift
     - MBProgressHUD
     - XYZColor
-  - XYZResponse (1.0.0)
+  - XYZResponse (1.1.1)
 
 DEPENDENCIES:
   - Localize-Swift
   - PopupDialog
   - SoHow
-  - XYZColor
   - XYZHUD
   - XYZResponse
 
 SPEC REPOS:
-  trunk:
+  https://github.com/CocoaPods/Specs.git:
     - DynamicBlurView
     - Localize-Swift
     - MBProgressHUD
@@ -33,15 +31,15 @@ SPEC REPOS:
     - XYZResponse
 
 SPEC CHECKSUMS:
-  DynamicBlurView: ccf9acd2b20c883cc2c72e3524a04d8d3ee20533
+  DynamicBlurView: 58e18fae80bb614e34681a4486870e7d257b62e8
   Localize-Swift: 4bed4f0ccac8be2ec3517ee359da80ba2adb0fae
-  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   PopupDialog: 720c92befd8bc23c13442254945213db5612f149
-  SoHow: 987e92491190423cc848e8a79a7347eb2172b57d
+  SoHow: c5efe12841138d6ce3795eed77cd41f56040be8f
   XYZColor: c47e71d7714d119d1505f1a0e1619639b00c9465
   XYZHUD: 187a4e41ad1700fb6ba026344781f0d46391d909
-  XYZResponse: 39c1d381d9a648fc0fcf2ceef9e1c34fa7e2f4ed
+  XYZResponse: ac49453158bb1ae99058852146f7e5bbe4541c34
 
-PODFILE CHECKSUM: 65bb3fbba7f220bb80d1fef1034e96125999e771
+PODFILE CHECKSUM: 2f8aac8b2f79ac736713d3ef789e3457dd691f2b
 
 COCOAPODS: 1.8.4

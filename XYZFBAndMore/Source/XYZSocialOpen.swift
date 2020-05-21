@@ -12,7 +12,7 @@ import MessageUI                                    //弹出Email框的库
 import SoHow                                        //自有库
 //-----------------------------------第三方的库--------------------------------------//
 import PopupDialog                                  //关于我们页面的弹出依赖
-import XYZColor
+ 
 import Localize_Swift
 import XYZHUD
 import XYZResponse

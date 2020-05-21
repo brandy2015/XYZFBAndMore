@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "XYZFBAndMore"
-  s.version      = "1.1.1"
+  s.version      = "1.1.2"
   s.summary      = "持续升级"
 
   # This description is used to generate tags and improve search results.
@@ -55,7 +55,7 @@ Pod::Spec.new do |s|
 
   s.authors            = { "Brandy" => "zhangqianbrandy2012@gmail.com" }
   s.platform     = :ios, "13.0"
-  s.source       = { :git => "https://github.com/brandy2015/XYZFBAndMore.git", :tag => "1.1.1"}
+  s.source       = { :git => "https://github.com/brandy2015/XYZFBAndMore.git", :tag => "1.1.2"}
   s.source_files = "XYZFBAndMore/Source/*"
 
 #"XYZFBAndMore/Source/*","XYZFBAndMore/Source/PopupWindow/*","XYZFBAndMore/PopupWindow/Extensions/*","XYZFBAndMore/Source/Custom/*","XYZFBAndMore/Source/Custom/**/*"
@@ -71,7 +71,6 @@ Pod::Spec.new do |s|
 #'{podName}' => ['{podName}/Classes/*.xib']
 
     s.dependency 'SoHow'
-    s.dependency 'XYZColor'
     s.dependency 'XYZResponse'
     s.dependency 'PopupDialog'
     s.dependency 'Localize-Swift'
@@ -168,7 +167,7 @@ end
 
 #Pod::Spec.new do |s|
 #s.name         = "ZYRunTimeCoT"
-#s.version      = "1.1.1"
+#s.version      = "1.1.2"
 #s.ios.deployment_target = '8.0'
 #s.summary      = "简介"
 #s.homepage     = "https://github.com/zhangyqyx/ZYRunTimeCoT"
