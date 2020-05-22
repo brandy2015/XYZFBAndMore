@@ -9,13 +9,13 @@
 import UIKit                                        //iOS基础库
 import MessageUI                                    //弹出Email框的库
 //-----------------------------------自有库-----------------------------------------//
-import SoHow                                        //自有库
+//import SoHow                                        //自有库
 //-----------------------------------第三方的库--------------------------------------//
 import PopupDialog                                  //关于我们页面的弹出依赖
  
 import Localize_Swift
 import XYZHUD
-import XYZResponse
+//import XYZResponse
 
 
 //打开的按钮
@@ -63,7 +63,7 @@ public extension ContactUSObjcet{
         return SelfDefineBTN(title: title, dismissOnTap: false) {
             popup.shake()
             XYZResponse.D点按马达震动反馈(style: .error)
-            afterDelay(1.4, closure: {
+            self.afterDelay(1.4, closure: {
                 switch BTNForWhat{
                     case .Wechat        :       self.打开微信按钮()
                     case .WeChatPublic  :       self.打开微信公众号按钮()
@@ -95,6 +95,31 @@ public extension ContactUSObjcet{
         显示账号复制成功(标题: "QQ号为".localized(), 描述: "2957949165（已复制进剪贴板）", 颜色: UIColor.black, 复制进剪贴板: "2957949165")
         openURL(URLString: "mqq://", 打开的是: "QQ")
         print("SoHowTec");
+    }
+
+    
+    class XYZResponse: NSObject {
+        /// 创建枚举
+        public enum FeedbackType: Int {case light,medium,heavy,success,warning,error,none}
+        /// 创建类方法，随时调用
+        public static func D点按马达震动反馈(style: FeedbackType) {
+            let generator = UINotificationFeedbackGenerator()
+            switch style {
+            case .light:
+                let generator = UIImpactFeedbackGenerator(style: .light)
+                generator.impactOccurred()
+            case .medium:
+                let generator = UIImpactFeedbackGenerator(style: .medium)
+                generator.impactOccurred()
+            case .heavy:
+                let generator = UIImpactFeedbackGenerator(style: .heavy)
+                generator.impactOccurred()
+            case .success: generator.notificationOccurred(.success)
+            case .warning: generator.notificationOccurred(.warning)
+            case .error  : generator.notificationOccurred(.error)
+            default:break
+            }
+        }
     }
 
     

@@ -8,7 +8,7 @@
 
 import UIKit
 import XYZHUD
-import SoHow
+//import SoHow
 import MessageUI
 
 //Email相关

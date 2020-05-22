@@ -18,6 +18,7 @@
 		D67BC14C22450EE4009CD7CD /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D67BC14922450EE3009CD7CD /* LICENSE */; };
 		D67BC14D22450EE4009CD7CD /* XYZFBAndMore.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D67BC14A22450EE3009CD7CD /* XYZFBAndMore.podspec */; };
 		D67BC14E22450EE4009CD7CD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D67BC14B22450EE4009CD7CD /* README.md */; };
+		D6C94175247764FA00350D6D /* UIDevice_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C94174247764FA00350D6D /* UIDevice_Extension.swift */; };
 		D6E22C702244A15B006BC591 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E22C6F2244A15B006BC591 /* AppDelegate.swift */; };
 		D6E22C722244A15B006BC591 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E22C712244A15B006BC591 /* ViewController.swift */; };
 		D6E22C752244A15B006BC591 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6E22C732244A15B006BC591 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 		D67BC14922450EE3009CD7CD /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D67BC14A22450EE3009CD7CD /* XYZFBAndMore.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XYZFBAndMore.podspec; sourceTree = "<group>"; };
 		D67BC14B22450EE4009CD7CD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D6C94174247764FA00350D6D /* UIDevice_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDevice_Extension.swift; sourceTree = "<group>"; };
 		D6E22C6C2244A15B006BC591 /* XYZFBAndMore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XYZFBAndMore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6E22C6F2244A15B006BC591 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6E22C712244A15B006BC591 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				D60000C322F7DC1600E7828A /* MoreDefine_Extension.swift */,
 				D60000CD22F7EEDB00E7828A /* FeedBackEnum.swift */,
 				D6EACA5C23A0878B0060EB65 /* Help.swift */,
+				D6C94174247764FA00350D6D /* UIDevice_Extension.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				D6E22C702244A15B006BC591 /* AppDelegate.swift in Sources */,
 				D60000C622F7DEB200E7828A /* SelfHUD_Extension.swift in Sources */,
 				D60000CE22F7EEDB00E7828A /* FeedBackEnum.swift in Sources */,
+				D6C94175247764FA00350D6D /* UIDevice_Extension.swift in Sources */,
 				D60000CA22F7E09C00E7828A /* XYZSocialOpen.swift in Sources */,
 				D60000C822F7DFB100E7828A /* XYZEmail_Extension.swift in Sources */,
 			);

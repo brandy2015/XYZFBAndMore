@@ -7,10 +7,8 @@ target 'XYZFBAndMore' do
 
   # Pods for XYZFBAndMore
   
-  pod 'SoHow'                 #自己的库
-#  pod 'XYZColor'               #自己的管理颜色
-  pod 'XYZResponse'
-  #pod 'AsyncSwift'
+  #pod 'SoHow'                 #自己的库
+ # pod 'XYZResponse' 
   pod 'PopupDialog'
   pod 'Localize-Swift'    #, '~> 2.0'翻译各种语言
   pod 'XYZHUD'

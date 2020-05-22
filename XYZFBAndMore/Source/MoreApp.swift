@@ -10,6 +10,13 @@
 import UIKit                                        //iOS基础库                                 //弹出Email框的库
 import XYZHUD
 
+//弹出框相关
+public extension MoreAppObject{
+    func 显示账号复制成功(标题:String,描述:String,颜色:UIColor,复制进剪贴板:String) {
+        UIPasteboard.general.string = 复制进剪贴板
+        XYZHUD.弹出popUPView(标题:标题, 描述:描述 , 颜色: 颜色)
+    }
+}
 
 public class MoreAppObject: NSObject{
     public static var shared :MoreAppObject? = nil
@@ -21,10 +28,4 @@ public class MoreAppObject: NSObject{
 }
 
 
-//弹出框相关
-public extension MoreAppObject{
-    func 显示账号复制成功(标题:String,描述:String,颜色:UIColor,复制进剪贴板:String) {
-        UIPasteboard.general.string = 复制进剪贴板
-        XYZHUD.弹出popUPView(标题:标题, 描述:描述 , 颜色: 颜色)
-    }
-}
+

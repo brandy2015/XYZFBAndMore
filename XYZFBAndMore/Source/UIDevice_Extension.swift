@@ -8,7 +8,8 @@
 
 import UIKit
 
-public extension UIDevice {
+ 
+extension UIDevice {
 //    返回设备类型
     var DeviceType: String {
         var systemInfo = utsname()
