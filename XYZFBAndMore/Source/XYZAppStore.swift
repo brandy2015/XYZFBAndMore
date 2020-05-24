@@ -72,7 +72,7 @@ public extension MoreAppObject{
         }
     }
     
-    func 打开AppStore页面(AppSite:String,描述:String = "正在为您打开本开发者团队更多软件".localized() ,颜色:UIColor = UIColor.Succeeded) {
+    func 打开AppStore页面(AppSite:String,描述:String = "正在为您打开本开发者团队更多软件".localized() ,颜色:UIColor = UIColor(red: 73/255, green: 210/255, blue: 67/255, alpha:0.5)) {
         //        let urlxx = vtlmakerString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
         XYZHUD.弹出popUPView(标题: "请稍等".localized(), 描述: 描述, 颜色: 颜色)
         DispatchQueue.main.async {
@@ -288,4 +288,28 @@ extension XYZJump{
     func 知乎()      {saveJump(To:"zhihu://") }
     func 优酷()      {saveJump(To:"youku://") }
     func QQ()       {saveJump(To:"mqq://") }
+}
+
+private extension UIColor{
+    class var Succeeded: UIColor {
+        return UIColor(red: 73/255, green: 210/255, blue: 67/255, alpha:0.5)
+    }
+    class var Failed: UIColor {
+        return UIColor(red: 238/255, green: 48/255, blue: 7/255, alpha:0.5)
+    }
+    class var Converting: UIColor {
+        return UIColor(red: 126/255, green: 219/255, blue: 212/255, alpha:0.5)
+    }
+    class var WeiBo: UIColor {
+        return UIColor(red: 247/255, green: 148/255, blue: 34/255, alpha:0.8)
+    }
+    class var WeChat: UIColor {
+        return UIColor(red: 13/255, green: 190/255, blue: 38/255, alpha:0.8)
+    }
+    class var GIFOut: UIColor {
+        return UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha:0.8)
+    }
+    class var GIFSize: UIColor {
+        return UIColor(red: 247/255, green: 200/255, blue: 96/255, alpha:0.8)
+    }
 }

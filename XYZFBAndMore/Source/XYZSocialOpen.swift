@@ -124,3 +124,26 @@ public extension ContactUSObjcet{
 
     
 }
+private extension UIColor{
+    class var Succeeded: UIColor {
+        return UIColor(red: 73/255, green: 210/255, blue: 67/255, alpha:0.5)
+    }
+    class var Failed: UIColor {
+        return UIColor(red: 238/255, green: 48/255, blue: 7/255, alpha:0.5)
+    }
+    class var Converting: UIColor {
+        return UIColor(red: 126/255, green: 219/255, blue: 212/255, alpha:0.5)
+    }
+    class var WeiBo: UIColor {
+        return UIColor(red: 247/255, green: 148/255, blue: 34/255, alpha:0.8)
+    }
+    class var WeChat: UIColor {
+        return UIColor(red: 13/255, green: 190/255, blue: 38/255, alpha:0.8)
+    }
+    class var GIFOut: UIColor {
+        return UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha:0.8)
+    }
+    class var GIFSize: UIColor {
+        return UIColor(red: 247/255, green: 200/255, blue: 96/255, alpha:0.8)
+    }
+}

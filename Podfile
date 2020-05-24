@@ -6,9 +6,7 @@ target 'XYZFBAndMore' do
   use_frameworks!
 
   # Pods for XYZFBAndMore
-  
-  #pod 'SoHow'                 #自己的库
- # pod 'XYZResponse' 
+   
   pod 'PopupDialog'
   pod 'Localize-Swift'    #, '~> 2.0'翻译各种语言
   pod 'XYZHUD'
