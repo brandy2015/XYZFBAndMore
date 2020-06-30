@@ -1,6 +1,6 @@
 //------------------------------弹出关于我们页面的封装库-------------------------------//
 //  ContactUSObjcet.swift
-//  VTLMaker
+//  XYZMaker
 //
 //  Created by 张子豪 on 2018/6/13.
 //  Copyright © 2018年 张子豪. All rights reserved.

@@ -36,7 +36,7 @@ public extension MoreAppObject{
         // Add buttons to dialog
         
         let TitleArray = [
-            "VTLMaker":"<本团队>VTLMaker--动态照片制作大师".localized(),
+            "XYZMaker":"<本团队>XYZMaker--动态照片制作大师".localized(),
             "XYZManager":"<本团队>XYZManager--隐藏秘密的文件管理器".localized(),
             "XYZQRCode":"<本团队>XYZQRCode--二维码生成扫描大管家".localized(),
         ]
@@ -73,7 +73,7 @@ public extension MoreAppObject{
     }
     
     func 打开AppStore页面(AppSite:String,描述:String = "正在为您打开本开发者团队更多软件".localized() ,颜色:UIColor = UIColor(red: 73/255, green: 210/255, blue: 67/255, alpha:0.5)) {
-        //        let urlxx = vtlmakerString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
+        //        let urlxx = XYZMakerString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
         XYZHUD.弹出popUPView(标题: "请稍等".localized(), 描述: 描述, 颜色: 颜色)
         DispatchQueue.main.async {
             guard let Appurl = URL(string: AppSite)  else{return}
@@ -84,7 +84,7 @@ public extension MoreAppObject{
     func 打开App的AppStore(App:APPList){
         var AppString = ""
         switch App {
-            case .VTLMaker      :AppString = "https://apps.apple.com/cn/app/id1245243577"
+            case .XYZMaker      :AppString = "https://apps.apple.com/cn/app/id1245243577"
             case .XYZManager    :AppString = "https://itunes.apple.com/cn/app/id1275597118"
             case .XYZQRCode     :AppString = "https://itunes.apple.com/cn/app/id1455193186"
             default:return
@@ -98,8 +98,8 @@ public extension MoreAppObject{
     }
     
     func 打开落格输入法X的AppStore()  {
-        let vtlmakerString = "https://apps.apple.com/cn/app/id1373102819"
-        self.打开AppStore页面(AppSite: vtlmakerString, 描述: "正在为您打开友商优质软件".localized(), 颜色: .darkGray)
+        let XYZMakerString = "https://apps.apple.com/cn/app/id1373102819"
+        self.打开AppStore页面(AppSite: XYZMakerString, 描述: "正在为您打开友商优质软件".localized(), 颜色: .darkGray)
         print("打开落格输入法")
     }
     

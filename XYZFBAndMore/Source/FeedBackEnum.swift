@@ -12,5 +12,5 @@ class FeedBackEnum: NSObject {
 
 }
 
-public enum APPList         :String{case VTLMaker,XYZManager,XYZQRCode,XYZList,XYZApp,XYZOCR}
+public enum APPList         :String{case XYZMaker,XYZManager,XYZQRCode,XYZList,XYZApp,XYZOCR}
 public enum XYZSocialType   :String{case Wechat,WeChatPublic,WeiBo,QQ,Email                 }

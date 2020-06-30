@@ -26,7 +26,7 @@ public extension ContactUSObjcet{
     }
     
     //email实现
-    func configuredMailComposeViewController(收件人s:[String] = ["XYZTechFeedBack@gmail.com"],邮件主题:String = "VTLMaker反馈".localized()) -> MFMailComposeViewController {
+    func configuredMailComposeViewController(收件人s:[String] = ["XYZTechFeedBack@gmail.com"],邮件主题:String = "XYZMaker反馈".localized()) -> MFMailComposeViewController {
         let mailComposeVC = MFMailComposeViewController();
         mailComposeVC.mailComposeDelegate = self
         // 设置邮件地址、主题及正文
