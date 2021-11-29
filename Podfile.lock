@@ -9,10 +9,8 @@ PODS:
   - MBProgressHUD (1.2.0)
   - PopupDialog (1.1.1):
     - DynamicBlurView (~> 4.0)
-  - QuickLayout (3.0.0)
-  - SwiftEntryKit (1.2.7):
-    - QuickLayout (= 3.0.0)
-  - XYZHUD (1.2.2):
+  - SwiftEntryKit (2.0.0)
+  - XYZHUD (3.0.5):
     - Localize-Swift
     - MBProgressHUD
     - SwiftEntryKit
@@ -23,12 +21,11 @@ DEPENDENCIES:
   - XYZHUD
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - DynamicBlurView
     - Localize-Swift
     - MBProgressHUD
     - PopupDialog
-    - QuickLayout
     - SwiftEntryKit
     - XYZHUD
 
@@ -37,10 +34,9 @@ SPEC CHECKSUMS:
   Localize-Swift: 6f4475136bdb0d7b2882ea3d4ea919d70142b232
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   PopupDialog: 720c92befd8bc23c13442254945213db5612f149
-  QuickLayout: 07b45a72b10083fee3f095990cfed1c1e7b27f0a
-  SwiftEntryKit: 537c92699d6034efb1ef9c32b11e0b37c97aa589
-  XYZHUD: ab9ece3da9bd0c1b61abd448959e4f60d6ca77e3
+  SwiftEntryKit: 61b5fa36f34a97dd8013e48a7345bc4c4720be9a
+  XYZHUD: 3d2c7a7ef7b5fc087f8ab2c8fcc1177300a28531
 
-PODFILE CHECKSUM: 7c0d8ac56b32e7e69c32f93507d86210b74ca417
+PODFILE CHECKSUM: de87a27ca7f74d0b16986158b39d2aed66dc0f01
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.2

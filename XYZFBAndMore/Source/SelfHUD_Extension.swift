@@ -10,10 +10,7 @@
 import UIKit
 import XYZHUD
 
-
-class SelfHUD_Extension: NSObject {
-
-}
+ 
 //HUD
 public extension ContactUSObjcet{
     func 显示账号复制成功(标题:String,描述:String,颜色:UIColor,复制进剪贴板:String) {
